@@ -10,3 +10,48 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+  .light {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    bottom: 3px;
+    margin-bottom: 0.5rem;
+  }
+  .light::after {
+    border-radius: 100%;
+    content: ' ';
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+  }
+  .light.red.selected {
+    background-color: #c02f1e;
+    box-shadow: 0 0 20px 5px #d6220e;
+  }
+  .light.yellow.selected {
+    background-color: #f1c40f;
+    box-shadow: 0 0 20px 5px #f1c40f;
+  }
+  .light.green.selected {
+    background-color: #05c455;
+    box-shadow:0 0 20px 5px #05c455
+  }
